@@ -5,13 +5,15 @@ public class Person {
     String firstname;
     String lastname;
     int age;
+
     String adress;
     int id;
     String gender;
 
-    public  Person(){
+//    public  Person(){
+//
+//    }
 
-    }
     public  Person(String firstname, String lastname, int age){
         this.firstname = firstname;
         this.lastname = lastname;

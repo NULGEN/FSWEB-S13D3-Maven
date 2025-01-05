@@ -10,8 +10,8 @@ public class Wall {
 //
 //    }
     public  Wall(double width, double height){
-        this.width = width;
-        this.height = height;
+        this.width = width < 0 ? 0: width;
+        this.height = height <0 ? 0: height;
 
 
     }
@@ -21,21 +21,12 @@ public class Wall {
     public  double getHeight(){
         return  this.height;
     }
-    public  double setWidth(double number ){
-        if(number<0){
-            return this.width = 0; }
-        else {
-            return this.width  = number;
-        }
+    public  void setWidth(double width ){
+      this.width = width <0 ? 0: width;
 
     }
-    public  double setHeight(double number){
-        if(number<0){
-            return  this.height=0;
-        }
-        else{
-            return  this.height= number;
-        }
+    public  void  setHeight(double height){
+      this.height = height <0 ? 0: height;
     }
     public  double getArea(){
         return  this.width * this.height;
